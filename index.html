@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="stylesheet" href="css/all.min.css">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Exo:wght@600;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="css/main.css">
+
+   <title>Daniela Verdejo</title>
+</head>
+
+<body>
+   <!----- BARRA NAVEGACIÓN ----->
+   <nav class="navbar navbar-expand-lg fixed-top border-bottom">
+      <div class="container">
+         <a class="navbar-brand text-dark fs-1" href="#">Daniela Verdejo</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-lg-4 py-3">
+               <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#certificaciones">Certificaciones</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#proyectos">Portafolio</a>
+               </li>
+            </ul>
+            <a class="btn-custom ms-lg-4" href="#contacto">Contacto</a>
+         </div>
+      </div>
+   </nav>
+
+   <!----- BANNER ----->
+   <header class="wave" id="inicio">
+      <div class="container">
+         <div class="row text-center">
+            <div class="col-md-6 text-white mt-4 ms-md-5 text-center-xs" style="z-index: 1;">
+               <h2 class="fw-bold text-dark">Developer y Teacher of English</h2>
+               <p class="text-dark fw-bold">Considero que tanto lo laboral como lo académico ocupa gran parte de nuestra vida diaria, por lo que aspiro a hacer cosas que me apasionen y disfrute. Actualmente, soy estudiante avanzada del Profesorado de Inglés y estudiante de la licenciatura de Análisis de Sistemas.</p>
+               <a class="btn btn-lg btn-primary" href="#certificaciones">Más información <i
+                     class="bi bi-arrow-right-circle"></i></a>
+            </div>
+            <div class="col ms-md-5 mt-3 mt-md-0 text-center-xs" style="z-index: 1;">
+               <img class="img-fluid" width="240px" src="img/fotomia.jpeg">
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!----- CERTIFICACIONES ----->
+   <section class="contenedor-slider" id="certificaciones">
+      <h1 class="text-center text-primary">Mis Certificaciones</h1>
+      <div class="slider" id="slider">
+         <div class="slide">
+            <img src="img/Full stack java.jpg" alt="Slide">
+         </div>
+         <div class="slide">
+            <img src="img/Html y css.jpg" alt="Slide">
+         </div>
+         <div class="slide">
+            <img src="img/js.jpg" alt="Slide">
+         </div>
+         <div class="slide">
+            <img src="img/Bootstrap.jpg" alt="Slide">
+         </div>
+         <div class="slide">
+            <img src="img/Git y github.jpg" alt="Slide">
+         </div>
+         <div class="slide">
+            <img src="img/java.jpg" alt="Slide">
+         </div>
+         <div class="slide">
+            <img src="img/poo.jpg" alt="Slide">
+         </div>
+         <div class="slide">
+            <img src="img/sql.jpg" alt="Slide">
+         </div>
+         <div class="slide">
+            <img src="img/html.jpg" alt="Slide">
+         </div>
+      </div>
+      <div class="btn-anterior" id="btnAnterior">
+         <i class="bi bi-arrow-left-circle-fill"></i>
+      </div>
+      <div class="btn-siguiente" id="btnSiguiente">
+         <i class="bi bi-arrow-right-circle-fill"></i>
+      </div>
+   </section>
+
+   <!----- MIS PROYECTOS ----->
+   <section class="proyectos" id="proyectos">
+      <div class="container">
+         <h1 class="text-center text-primary">Mis Proyectos</h1>
+         <div class="row g-3">
+            <div class="col-6 col-lg-4">
+               <div class="card">
+                  <video autoplay loop controls src="img/wordCount.mp4"></video>
+                  <div class="card-body text-center">
+                     <h5 class="card-title">Contador de palabras</h5>
+                     <p class="card-text">Creado con: <button type="button" class="btn btn-danger fw-bold btn-sm">Java</button></p>
+                     <a href="https://github.com/dverdejo/contadorPalabras" class="btn btn-primary">Ir al repositorio</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-6 col-lg-4">
+               <div class="card">
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                       <div class="carousel-item active">
+                         <img src="img/conBsAs.png" class="d-block w-100" alt="Conf Bs As">
+                       </div>
+                       <div class="carousel-item">
+                         <img src="img/tickets.png" class="d-block w-100" alt="Tickets">
+                       </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+                  <div class="card-body text-center">
+                     <h5 class="card-title">Conferencia Bs As</h5>
+                     <p class="card-text">Creado con: 
+                        <button type="button" class="btn btn-danger fw-bold btn-sm">HTML</button>
+                        <button type="button" class="btn btn-info fw-bold btn-sm">CSS</button>
+                        <button type="button" class="btn btn-primary fw-bold btn-sm">Bootstrap</button>
+                        <button type="button" class="btn btn-warning fw-bold btn-sm">JavaScript</button>
+                     </p>
+                     <a href="https://github.com/dverdejo/integrador_codoacodo" class="btn btn-primary">Ir al repositorio</a>
+                     <a href="https://dverdejo.github.io/integrador_codoacodo/index.html" class="btn btn-primary">Ir a la página</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-6 col-lg-4">
+               <div class="card">
+                  <video autoplay loop controls src="img/oraculo.mp4"></video>
+                  <div class="card-body text-center">
+                     <h5 class="card-title">Oraculo</h5>
+                     <p class="card-text">Creado con: <button type="button" class="btn btn-danger fw-bold btn-sm">Java</button>.</p>
+                     <a href="https://github.com/dverdejo/oraculo" class="btn btn-primary">Ir al repositorio</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </section>
+
+   <!----- CONTACTO ----->
+   <section class="contacto" id="contacto">
+      <div class="container">
+         <div class="contenedor-formulario">
+            <div class="formulario">
+               <h2>Podés comunicarte vía mail</h2>
+               <form class="form-group">
+                  <input class="form-control" type="text" placeholder="Nombre">
+                  <input type="email" class="form-control" id="email-form" placeholder="Correo Electrónico">
+                  <textarea class="form-control" id="mensajeLargo" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+               </form>
+
+               <h2 class="mt-4">O a través de las siguientes redes sociales</h2>
+               <div class="redes-sociales text-center row">
+                  <a href="https://ar.linkedin.com/in/daniela-verdejo-28760118b" class="col-6"><i class="bi bi-linkedin fs-1"></i></a>
+                  <a href="https://github.com/dverdejo?tab=repositories" class="col-6"><i class="bi bi-github fs-1"></i></a>
+               </div>
+            </div>
+            <div class="foto"></div>
+         </div>
+      </div>
+   </section>
+
+   <!----- FOOTER ----->
+   <footer>
+      <div class="row">
+         <p class="text-dark col-12 text-center py-4 mb-0">&copy; Todos los derechos reservados</p>
+      </div>
+   </footer>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0 "
+      crossorigin="anonymous "></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js "
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=" anonymous "></script>
+   <script src="js/jquery.magnific-popup.min.js "></script>
+   <script src="js/script.js "></script>
+</body>
+
+</html>

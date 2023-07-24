@@ -1,0 +1,267 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    max-width: inherit;
+}
+
+nav, header, .proyectos, .contacto, footer{
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    margin: 40px;
+}
+
+h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ----- BARRA DE NAVAGACIÓN ----- */
+.navbar .navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.navbar .nav-link {
+    color: white;
+    margin-right: 29px;
+    transition: 0.2s;
+}
+
+a.nav-link:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid white;
+}
+
+.btn-custom {
+    border: 1.5px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    background: none;
+    padding: 8px 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+.btn-custom:hover {
+    background: #52c4f5;
+    border: 1.5px solid #0979b0;
+    color: #fff;
+}
+
+.navbar-fixed {
+    background-color: rgba(77, 168, 207, 1);
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all 0.6s;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- BANNER ----- */
+header {
+    width: 100%;
+    min-height: 625px;
+}
+
+.img-fluid {
+    border-radius: 35px;
+    margin-top: 40px;
+}
+
+.wave {
+    position: relative;
+    padding-top: 6rem;
+    background: linear-gradient(90deg, rgb(171, 223, 249) 0%, rgb(41, 148, 193) 100%);
+}
+
+.wave:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 216px;
+    background: url('../img/wave.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ----- CERTIFICACIONES ----- */
+.contenedor-slider {
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0 54px 0;
+    position: relative;
+}
+
+.contenedor-slider .slider {
+    width: 400%;
+    display: flex;
+}
+
+.contenedor-slider .slider .slide {
+    max-width: 950px;
+    margin-right: 0.7%;
+    box-shadow: 0px 20px 40px #aaa;
+}
+
+.contenedor-slider .slider .slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.contenedor-slider .btn-anterior,
+.contenedor-slider .btn-siguiente {
+    display: inline-block;
+    cursor: pointer;
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contenedor-slider .btn-anterior {
+    left: 2%;
+}
+
+.contenedor-slider .btn-siguiente {
+    right: 2%;
+}
+
+.contenedor-slider .btn-anterior i,
+.contenedor-slider .btn-siguiente i {
+    color: black;
+}
+
+.contenedor-slider .btn-anterior i:hover,
+.contenedor-slider .btn-siguiente i:hover {
+    color: #0089E0;
+}
+
+/* ----- PROYECTOS ----- */
+.proyectos {
+    background-image: url('../img/fondoceleste.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px 0 80px 0;
+    margin-top: 40px;
+}
+
+/* ----- CONTACTO ----- */
+.contacto {
+    padding: 100px 0 70px;
+}
+
+.contenedor-formulario {
+    background: #fff;
+    min-height: 485px;
+    border-radius: 3px;
+    box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario {
+    width: 50%;
+    padding: 50px;
+}
+
+.formulario h2 {
+    font-size: 1.375rem;
+    line-height: 24px;
+    color: #0089E0;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"], .form-group input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.form-group textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    outline: none;
+    width: 100%;
+    max-width: 100%;
+    max-height: 88px;
+    min-height: 88px;
+    color: #979797;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0;
+}
+
+.form-group .btn {
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.redes-sociales .bi {
+    color: black;
+   }
+
+.redes-sociales .bi:hover {
+ color: #0089E0;
+}
+
+.contenedor-formulario .foto {
+    width: 50%;
+    background-image: url('../img/mensaje.jpg');
+    background-size: cover;
+}
+
+/* ----- FOOTER ----- */
+footer{
+    background: linear-gradient(90deg, rgb(171, 223, 249) 0%, rgb(41, 148, 193) 100%);
+    height: 72px;
+}
+
+/* ----- MEDIA QUERIES ----- */
+@media screen and (max-width: 900px) {
+
+    /*Contacto*/
+    .contenedor-formulario .formulario {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedor-formulario .foto {
+        display: none;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+
+    /*Contacto*/
+    .main .contacto .contenedor-formulario .formulario {
+        padding: 70px 40px;
+    }
+}
